@@ -1,0 +1,287 @@
+@font-face {
+  font-family: "Aniron";
+  src: url("Fonts/anirb___.ttf") format("truetype"),
+     url("Fonts/anirm___.ttf") format("truetype"),
+     url("Fonts/anicb___.ttf") format("truetype"),
+     url("Fonts/anicm___.ttf") format("truetype");
+}
+
+.aniron {
+    font-family: Aniron, AnironC, sans-serif;
+    
+}
+
+.barre, .card-header {
+  background-color: #fe661d;  
+
+}
+.typoMenu {
+    
+  padding-top: 0rem;
+  margin-top: 0.5rem;
+}
+
+.typoMenu:hover {
+  color: white;
+  border-bottom: 5px solid white;
+}
+
+.separation {
+  border-right: 2px solid white;
+}
+
+@media (min-width: 1200px) {
+
+/*********** XL Navbar **********/    
+  .menu_lien {
+    
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+    padding-top: 0.75rem;
+    margin-right: 0rem;
+    margin-left: 0.75rem;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+  #menu {
+    margin-top: -0.75rem;
+  }
+
+  .typoMenu {
+    color: white;
+    font-size: 1rem;
+
+  }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+/*********** LG Navbar **********/    
+  .menu_lien {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    font-size: 1rem;
+  }
+  .logo {
+    font-size: 1.25rem;
+    padding-top: 0.75rem;
+    margin-right: 0rem;
+    margin-left: 0.75rem;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+  #menu {
+    margin-top: -0.75rem;
+  }
+
+  .typoMenu {
+    color: white;
+    font-size: 0.9rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+/*********** MD Navbar **********/  
+  .menu_lien {
+    padding-right: 0rem;
+    padding-left: 0rem;
+    font-size: 0.75rem;
+  }
+  .logo {
+    font-size: 1rem;
+    padding-top: 0.75rem;
+    margin-right: 0rem;
+    margin-left: 0.75rem;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+  #menu {
+    margin-top: -0.75rem;
+  }
+
+  .typoMenu {
+    color: white;
+    font-size: 0.8rem;
+  }
+}
+
+/* SM Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+/*********** SM Navbar **********/
+  .logo {
+    padding-top: 0.75rem;
+
+    margin-right: 0rem;
+    margin-left: 0.75rem;
+    
+  }
+  .logo img {
+    width: 100%;
+  }
+  #menu {
+    margin-top: -0.5rem;
+  }
+
+  .typoMenu {
+    color: white;
+    font-size: 0.6rem;
+  }
+
+  .menu_lien {
+    padding: 0rem 0rem;
+    font-size: 0.75rem;
+  }
+}
+
+/*XS Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .para {
+        font-size: 1.25rem;
+    }
+/*********** XS Navbar **********/  
+
+  .logo {
+    margin-right: 0rem;
+    margin-left: 0.75rem;
+    padding-top: 1.25rem;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+
+  .typoMenu {
+    color: white;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+  .menu_lien {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}          
+
+.ringTitle {
+  width: 50px;
+  height: 50px;
+  border: 5px solid orange;
+  box-shadow: 2px 2px 4px red;
+  border-radius: 50%;
+}
+
+.ringCorps {
+  width: 130px;
+  height: 130px;
+  border: 10px solid yellow;
+  box-shadow: 6px 6px 6px brown;
+  border-radius: 50%;
+}
+
+.rings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rings .ring-1 {
+  width: 50px;
+  height: 50px;
+  margin-left: -30px;
+  border-radius: 50%;
+  border: 8px solid grey;
+  box-shadow: 3px 3px 3px black;
+}
+.rings .ring-2 {
+  width: 75px;
+  height: 75px;
+  margin-left: -30px;
+  border-radius: 50%;
+  border: 8px solid grey;
+  box-shadow: 3px 3px 3px black;
+}
+.rings .ring-3 {
+  width: 100px;
+  height: 100px;
+  margin-left: -30px;
+  border-radius: 50%;
+  border: 8px solid grey;
+  box-shadow: 3px 3px 3px black;
+}
+.rings .ring-4 {
+  width: 125px;
+  height: 125px;
+  margin-left: -30px;
+  border-radius: 50%;
+  border: 8px solid grey;
+  box-shadow: 3px 3px 3px black;
+}
+.rings .ring-5 {
+  width: 150px;
+  height: 150px;
+  margin-left: -30px;
+  border-radius: 50%;
+  border: 8px solid grey;
+  box-shadow: 3px 3px 3px black;
+}
+.rings .ring-6 {
+  width: 175px;
+  height: 175px;
+  margin-left: -30px;
+  border-radius: 50%;
+  border: 8px solid grey;
+  box-shadow: 3px 3px 3px black;
+}
+
+.taille {
+  padding-top: 20px;
+  margin-top: 50px;
+  display: flex;
+  font-size: 40px;
+  justify-content: center;
+}
+
+.paragraphe {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 0px;
+}
+.bg {
+  background-image: url("Images/bg_light.png");
+  height: 800px;
+}
+
+/********** Section Footer **********/
+#pied {
+    background-color: #ff6702;
+    color: white;
+}
+#pied li a {
+    color: white;
+}
+
+#pied a {
+    color: white;
+}
+
+.liste {
+    list-style-type: none;
+}
+
+.forever a:hover {
+    color: #4d4946;
+    text-decoration: none;
+}

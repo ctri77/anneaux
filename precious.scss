@@ -1,0 +1,64 @@
+@mixin ring($colorRing, $widthRing) {
+    width: $widthRing;
+    height: $widthRing;
+    @if ($widthRing < 100px) {
+      border: 5px solid $colorRing;
+      @if ($colorRing == orange) {
+        box-shadow: 2px 2px 4px red;
+      }
+      @else {
+        box-shadow: 8px -8px 8px pink;
+      }
+    }
+    @else {
+      border: 10px solid $colorRing;
+      @if ($colorRing == orange) {
+        box-shadow: 4px 4px 4px green;
+      }
+      @else {
+        box-shadow: 6px 6px 6px brown;
+      }
+    }
+    border-radius: 50%;
+  
+  }
+  
+  .ringTitle {
+    @include ring(orange, 50px)
+  }
+  
+  .ringCorps {
+    @include ring(yellow, 130px)
+  }
+  $widthRings: 200px;
+  .rings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @for $i from 1 through 6 {
+      .ring-#{$i} {
+        width: $widthRings/4 - $widthRings/8*(1 - $i);
+        height: $widthRings/4 - $widthRings/8*(1 - $i);
+        margin-left: -30px;
+        border-radius: 50%;
+        border: 8px solid grey;
+        box-shadow: 3px 3px 3px black;
+        
+      }
+    }
+  }
+  
+  .taille {
+    
+    padding-top: 20px;
+    margin-top: 50px;
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+  }
+  
+  .paragraphe {
+    padding-right: 15px;
+    padding-left: 15px; 
+    margin-bottom: 0px;
+  }
